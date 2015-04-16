@@ -34,6 +34,14 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'capybara'
+   #launch applications - used for launching screenshots in capybara
+  gem 'launchy'
+
+  #required for non-headless testing
+  gem 'selenium-webdriver'
+  #needed to use chrome in non-headless testing
+  gem 'chromedriver-helper'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
@@ -44,11 +52,10 @@ group :development, :test do
   gem 'spring'
 end
 
-group :test do
-  gem 'capybara'
-end
 
 group :production do
   gem 'pg'
 end
+
+
 
