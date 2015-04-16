@@ -1,5 +1,7 @@
 require 'rails_helper'
 
+# let(:base_title) { "Ruby on Rails Tutorial Sample App" }
+
 describe "Static pages" do
 
   describe "Home page" do
